@@ -63,6 +63,16 @@ namespace dataloaders.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1234 {
+            get {
+                object obj = ResourceManager.GetObject("1234", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _900_Kikkia_Jackson_DSC_4932_resize {
             get {
                 object obj = ResourceManager.GetObject("900_Kikkia-Jackson_DSC_4932_resize", resourceCulture);
@@ -96,6 +106,16 @@ namespace dataloaders.Properties {
         internal static System.Drawing.Bitmap mmmm {
             get {
                 object obj = ResourceManager.GetObject("mmmm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nmn {
+            get {
+                object obj = ResourceManager.GetObject("nmn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D021E91-47F5-4F5C-A944-362F4BA03937}</ProjectGuid>
+    <ProjectGuid>{9AA46612-0C7C-460B-B289-161606CB8F74}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>dataloaders</RootNamespace>
-    <AssemblyName>dataloaders</AssemblyName>
+    <RootNamespace>DataLoaderSon</RootNamespace>
+    <AssemblyName>DataLoaderSon</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,7 +62,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,27 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\interfacebackgroundim.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\900_Kikkia-Jackson_DSC_4932_resize.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sssssss.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\aaaaaaaaa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mmmm.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nmn.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1234.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,10 +38,7 @@ namespace dataloaders
         {
             InitializeComponent();
             InitializeTimer();
-            //timer.Tick += Timer_Tick;
-            //timer = new Timer();
-            //timer.Interval = 1000;
-            //timer.Tick += Timer_Tick;
+                 
             
         }
 
@@ -68,43 +65,7 @@ namespace dataloaders
                     fileSelected = true;
                 }
             }
-            /*string fileUrl = textBox2.Text.Trim();
-
-            if (!string.IsNullOrEmpty(fileUrl))
-            {
-                try
-                {
-                  
-                    UpdateLoadingStatus();
-                    isDownloading = true;
-
-                    using (WebClient webClient = new WebClient())
-                    {
-                        string fileName = Path.GetFileName(fileUrl);
-
-                        using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-                        {
-                            saveFileDialog.FileName = fileName;
-                            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                            {
-                                await webClient.DownloadFileTaskAsync(new Uri(fileUrl), saveFileDialog.FileName);
-
-                                MessageBox.Show("File downloaded successfully!");
-                                UpdateLoadingStatus() ;
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error occurred while downloading the file: " + ex.Message);
-                }
-                finally
-                {
-                    isDownloading = false;
-                  
-                }
-            }*/
+            
 
         }
 
@@ -279,75 +240,13 @@ namespace dataloaders
 
         }
 
-        /*private void progressBar1_Click(object sender, EventArgs e)
-        {
-            // Check if the event arguments are of type DownloadProgressChangedEventArgs
-            if (e is DownloadProgressChangedEventArgs downloadArgs)
-            {
-                // Update the ProgressBar based on the download percentage
-                progressBar1.Value = downloadArgs.ProgressPercentage;
-            }
-        }*/
+        
 
         private void timer2_Tick(object sender, EventArgs e)
         {
 
         }
 
-        /*private async void button2_Click(object sender, EventArgs e)
-        {
-            // Check if a file has been previously selected
-            if (string.IsNullOrEmpty(selectedFilePath))
-            {
-                MessageBox.Show("Please select a file using the 'Browse' button.");
-                return;
-            }
-
-            // Proceed with the download using the previously selected file path
-            try
-            {
-                isDownloading = true; // Set isDownloading to true before the download starts
-                UpdateLoadingStatus();
-                //progressBar1.Value = 0; // Reset the progress bar
-
-                using (WebClient webClient = new WebClient())
-                {
-                    string fileName = Path.GetFileName(selectedFilePath);
-
-                    using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-                    {
-                        saveFileDialog.FileName = fileName;
-                        if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                        {
-                            // Download the file and save it to the destination path
-                            webClient.DownloadProgressChanged += WebClient_DownloadProgressChanged;
-                            await webClient.DownloadFileTaskAsync(new Uri(selectedFilePath), saveFileDialog.FileName);
-
-
-                            MessageBox.Show("File downloaded successfully!");
-                            //isDownloading = false; // Set isDownloading to false when download is complete
-                            //UpdateLoadingStatus();
-                            //progressBar1.Value = 0; // Reset the progress bar
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error occurred while downloading the file: " + ex.Message);
-            }
-            finally
-            {
-                // Download is complete, update the status
-                isDownloading = false;
-                UpdateLoadingStatus();
-                progressBar1.Value = 0; // Reset the progress bar
-            }
-        }*/
-        //private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-        //{
-        // Update the ProgressBar based on the download percentage
-        //  progressBar1.Value = e.ProgressPercentage;
-        //}
+       
     }
 }
